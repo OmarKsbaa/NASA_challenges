@@ -1,0 +1,68 @@
+{
+  "feature_columns": [
+    "dec",
+    "koi_depth",
+    "koi_depth_err1",
+    "koi_depth_err2",
+    "koi_duration",
+    "koi_duration_err1",
+    "koi_duration_err2",
+    "koi_fpflag_co",
+    "koi_fpflag_ec",
+    "koi_fpflag_nt",
+    "koi_fpflag_ss",
+    "koi_impact",
+    "koi_insol",
+    "koi_kepmag",
+    "koi_model_snr",
+    "koi_period",
+    "koi_period_err1",
+    "koi_period_err2",
+    "koi_prad",
+    "koi_prad_err1",
+    "koi_prad_err2",
+    "koi_score",
+    "koi_slogg",
+    "koi_srad",
+    "koi_steff",
+    "koi_teq",
+    "ra",
+    "log_koi_period",
+    "log_koi_duration",
+    "log_koi_depth",
+    "log_koi_prad",
+    "log_koi_teq",
+    "log_koi_insol",
+    "period_err_abs",
+    "depth_err_abs",
+    "duration_err_abs",
+    "prad_err_abs",
+    "snr_depth_ratio",
+    "period_duration_ratio",
+    "koi_period_missing",
+    "koi_depth_missing",
+    "koi_prad_missing",
+    "koi_steff_missing"
+  ],
+  "target_classes": {
+    "0": "FALSE POSITIVE",
+    "1": "CANDIDATE",
+    "2": "CONFIRMED"
+  },
+  "train_shape": [
+    7651,
+    44
+  ],
+  "test_shape": [
+    1913,
+    44
+  ],
+  "preprocessing_steps": [
+    "target_encoding",
+    "feature_selection",
+    "feature_engineering",
+    "missing_value_imputation",
+    "feature_scaling",
+    "train_test_split"
+  ]
+}
